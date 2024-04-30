@@ -9,8 +9,8 @@ public class CheckDigit
    {  
      /* to be implemented in part (a) */
      int a = 0;
-     for(int i = 0; i < getNumberOfDigits(num); i++){
-       a += getDigit(num, i) * (7-i);
+     for(int i = 1; i <= getNumberOfDigits(num); i++){
+       a += getDigit(num, i) * (8-i);
      }
      if(a < 10)
        return a;
